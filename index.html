@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>铜梁祥龙 · 铜梁龙舞IP形象设计</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c8342a; --deep:#8f1f1a; --gold:#d9a441; --paper:#f6efe2; --ink:#3a2a22;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--paper);color:var(--ink);line-height:1.8}
+h1,h2,h3,.serif{font-family:'Noto Serif SC',serif}
+img{max-width:100%;display:block}
+/* hero */
+.hero{background:linear-gradient(160deg,#a5271d 0%,#c8342a 55%,#d9a441 130%);color:#fff;text-align:center;padding:90px 20px 70px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.12),transparent 40%);pointer-events:none}
+.hero h1{font-size:clamp(42px,7vw,84px);letter-spacing:.18em;font-weight:900}
+.hero .en{letter-spacing:.45em;font-size:14px;opacity:.85;margin:18px 0 6px;text-transform:uppercase}
+.hero .sub{font-size:18px;opacity:.95;letter-spacing:.3em}
+.badge{display:inline-block;border:1px solid rgba(255,255,255,.6);padding:4px 18px;border-radius:999px;font-size:13px;letter-spacing:.2em;margin-top:26px}
+section{max-width:1100px;margin:0 auto;padding:70px 24px}
+.kicker{color:var(--red);font-weight:700;letter-spacing:.35em;font-size:14px}
+h2.title{font-size:34px;margin:8px 0 14px}
+p.intro{max-width:820px;font-weight:300}
+/* intro box */
+.intro-box{background:#fff;border:1px solid #e6d9c2;border-left:6px solid var(--red);padding:32px 36px;box-shadow:0 8px 30px rgba(120,60,30,.08);border-radius:8px}
+/* dragon cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px;margin-top:44px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 34px rgba(120,60,30,.12);transition:transform .25s}
+.card:hover{transform:translateY(-6px)}
+.card .ph{background:#fbf7ee;padding:18px;display:flex;justify-content:center}
+.card .ph img{max-height:340px;object-fit:contain}
+.card .info{padding:20px 24px 26px;border-top:3px solid var(--gold)}
+.card h3{font-size:22px;color:var(--deep)}
+.card .tag{display:inline-block;font-size:12px;background:#f7e9d4;color:#9a6b1f;border-radius:999px;padding:2px 12px;margin:8px 0 10px}
+.card p{font-size:14px;font-weight:300}
+/* wide images */
+.wide{margin-top:50px}
+.wide img{border-radius:12px;box-shadow:0 10px 34px rgba(120,60,30,.12)}
+.wide .cap{text-align:center;font-size:13px;color:#8a7a68;margin-top:10px;letter-spacing:.1em}
+/* stamps */
+.stamps{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:22px;margin-top:40px}
+.stamps img{border-radius:10px;box-shadow:0 8px 24px rgba(120,60,30,.14)}
+/* stickers */
+.stickers{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:40px}
+.stickers img{border-radius:10px;box-shadow:0 8px 24px rgba(120,60,30,.12)}
+/* qr + footer */
+.qr-wrap{display:flex;gap:34px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid #e6d9c2;border-radius:14px;padding:36px;margin-top:50px}
+.qr-wrap img{width:150px;height:150px}
+footer{background:var(--deep);color:#f3e2c8;text-align:center;padding:44px 20px;font-size:13px;letter-spacing:.15em;margin-top:80px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>铜梁祥龙</h1>
+  <div class="en">Tongliang Xianglong · Dragon Dance IP Design</div>
+  <div class="sub">铜梁龙舞 IP 形象设计</div>
+  <div class="badge">重庆铜梁 · 版画新生 · 国潮福瑞</div>
+</header>
+
+<section>
+  <div class="kicker">作品简介 / INTRODUCTION</div>
+  <h2 class="title">让百年龙舞，跳进年轻人的口袋</h2>
+  <div class="intro-box">
+    <p>本设计以国家级非物质文化遗产「铜梁龙舞」为灵感源，提炼重庆铜梁龙灯的龙角、火焰、鳞甲与年画纹样，塑造出稻草龙、荷花龙、火龙、竞技龙、水云龙、竹绑龙六位性格各异的Q版祥龙形象。设计采用梁平木版年画的造型语言与高饱和国潮配色，结合三视图、表情包、海报、邮票、信封等系列衍生，让传统龙舞以治愈系萌态走进日常，实现非遗文化的年轻化传播与活态传承。</p>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">角色形象 / CHARACTERS</div>
+  <h2 class="title">六龙聚福 · 各显神通</h2>
+  <div class="grid" id="dragons"></div>
+</section>
+
+<section>
+  <div class="kicker">表情包设计 / STICKER DESIGN</div>
+  <h2 class="title">祥龙表情 · 万物皆可龙</h2>
+  <div class="stickers">
+    <img src="images/表情包1.jpg" alt="竞技龙表情"><img src="images/表情包2.jpg" alt="稻草龙表情">
+    <img src="images/表情包3.jpg" alt="竹绑龙表情"><img src="images/表情包4.jpg" alt="水云龙表情">
+    <img src="images/表情包5.jpg" alt="火龙表情"><img src="images/表情包6.jpg" alt="荷花龙表情">
+  </div>
+</section>
+
+<section>
+  <div class="kicker">海报设计 / POSTER DESIGN</div>
+  <h2 class="title">木版年画 · 新年祝福</h2>
+  <div class="stamps">
+    <img src="images/火龙海报.jpg" alt="火龙海报"><img src="images/稻草龙海报.jpg" alt="稻草龙海报">
+    <img src="images/竹绑龙海报.jpg" alt="竹绑龙海报"><img src="images/荷花龙海报.jpg" alt="荷花龙海报">
+    <img src="images/竞技龙海报.jpg" alt="竞技龙海报"><img src="images/水云龙海报.jpg" alt="水云龙海报">
+  </div>
+</section>
+
+<section>
+  <div class="kicker">延展设计 / EXTENSION DESIGN</div>
+  <h2 class="title">邮票与信封</h2>
+  <div class="stamps">
+    <img src="images/邮票1.jpg" alt="邮票"><img src="images/邮票2.jpg" alt="邮票"><img src="images/邮票3.jpg" alt="邮票">
+    <img src="images/邮票4.jpg" alt="邮票"><img src="images/邮票5.jpg" alt="邮票"><img src="images/邮票6.jpg" alt="邮票">
+  </div>
+  <div class="stamps" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+    <img src="images/信封1.jpg" alt="信封"><img src="images/信封2.jpg" alt="信封">
+  </div>
+</section>
+
+<section>
+  <div class="kicker">展板总览 / OVERVIEW</div>
+  <h2 class="title">作品整体版式</h2>
+  <div class="wide"><img src="images/画板_1.png" alt="作品展板"><div class="cap">铜梁祥龙 · 铜梁龙舞IP形象设计 展板</div></div>
+  <div class="qr-wrap">
+    <img id="qr" src="images/qrcode.png" alt="二维码">
+    <div>
+      <h3 class="serif" style="font-size:22px;color:var(--deep)">扫码在线浏览本作品</h3>
+      <p style="font-weight:300;font-size:14px">手机扫描二维码，随时随地查看「铜梁祥龙」完整作品集。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  铜梁祥龙 TONGLIANG XIANGLONG · 铜梁龙舞IP形象设计<br>
+  万象呈祥 · 福满人间 · 岁稔年丰 · 国泰民安
+</footer>
+
+<script>
+const dragons=[
+ {n:"火龙",t:"炽焰·热烈",d:"以铜梁火龙铁水飞金为意象，通体赤红缀火焰纹，性格热烈奔放，象征红火兴旺的日子。",img:"images/铜梁火龙.jpg"},
+ {n:"稻草龙",t:"岁稔·年丰",d:"取意稻草扎龙古法，金禾纹饰铺满周身，腹绘竹麦，寓意五谷丰登、仓廪殷实。",img:"images/稻草龙.jpg"},
+ {n:"竹绑龙",t:"劲节·清逸",d:"以竹为骨、以节为魂，绿竹纹样缠身，透出谦谦君子般的清逸劲节之气。",img:"images/竹绑龙.jpg"},
+ {n:"荷花龙",t:"粉荷·灵动",d:"头顶莲冠、通体粉嫩，如荷塘中跃出的小精灵，机灵爱笑，专司卖萌治愈。",img:"images/荷花龙.jpg"},
+ {n:"竞技龙",t:"竞舞·昂扬",d:"源自铜梁竞技龙舞，头顶彩球绒花，蓝金撞色，活力四射的舞场担当。",img:"images/竞技龙.jpg"},
+ {n:"水云龙",t:"云水·自在",d:"蓝衣金鳞、云纹绕身，如行云布雨的游龙，性情沉稳，是大伙儿的定心丸。",img:"images/水云龙.jpg"},
+];
+document.getElementById("dragons").innerHTML=dragons.map(x=>`
+ <div class="card"><div class="ph"><img src="${x.img}" alt="${x.n}"></div>
+ <div class="info"><h3>${x.n}</h3><span class="tag">${x.t}</span><p>${x.d}</p></div></div>`).join("");
+</script>
+</body>
+</html>
