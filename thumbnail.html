@@ -9,16 +9,15 @@ body{width:1440px;height:1080px;font-family:'Noto Sans SC','PingFang SC','Micros
 .top{width:56px;height:14px;background:#b8453a;margin-bottom:18px}
 .header{display:flex;align-items:center;justify-content:space-between}
 h1{font-size:44px;font-weight:900;letter-spacing:.06em}
-.qrbox{display:flex;align-items:center;gap:18px}
-.qrbox img{width:170px;height:170px;border:2px solid #d8c9ae;background:#fff;padding:5px}
-.qrbox .cap{font-size:18px;color:#7a6a5a;letter-spacing:.12em}
+.num img.qr{width:130px;height:130px;border:2px solid #d8c9ae;background:#fff;padding:5px;margin-left:30px}
+.qrcap{font-size:17px;color:#7a6a5a;letter-spacing:.12em;margin-top:6px}
 .main{display:flex;flex:1;align-items:flex-start}
 .left{width:430px;flex-shrink:0;padding-top:26px}
-.num{display:flex;align-items:baseline;gap:28px}
+.num{display:flex;align-items:center;gap:24px}
 .num .n{font-size:92px;font-weight:200;color:#b8453a;line-height:1}
-.num .t{font-size:44px;font-weight:900}
+.num .t{font-size:40px;font-weight:900;white-space:nowrap}
 .meta{margin:22px 0 0 4px;font-size:24px;color:#5a4a3e;line-height:1.8}
-.desc{margin-top:34px;font-size:19px;line-height:1.85;font-weight:300;color:#4a3a30}
+.desc{margin-top:70px;font-size:19px;line-height:1.85;font-weight:300;color:#4a3a30}
 .right{flex:1;display:flex;justify-content:flex-end;align-items:flex-start}
 .right img{max-height:960px;object-fit:contain}
 .mark{position:absolute;right:70px;bottom:30px;font-size:18px;letter-spacing:.35em;color:#b8453a;font-weight:700;background:rgba(245,240,230,.8)}
@@ -27,13 +26,10 @@ h1{font-size:44px;font-weight:900;letter-spacing:.06em}
 <body>
 <div class="page">
   <div class="top"></div>
-  <div class="header">
-    <h1>毕业作品展</h1>
-    <div class="qrbox"><img src="images/qrcode.png"><span class="cap">扫码浏览作品</span></div>
-  </div>
+  <h1>毕业作品展</h1>
   <div class="main">
     <div class="left">
-      <div class="num"><span class="n">01</span><span class="t">铜梁祥龙</span></div>
+      <div class="num"><span class="n">01</span><span class="t">铜梁祥龙</span><img class="qr" src="images/qrcode.png"></div>
       <div class="meta">作者：XXX &nbsp;|&nbsp; 指导老师：XXX<br>类别：IP形象设计 · 非遗文创</div>
       <p class="desc">本设计以国家级非物质文化遗产「铜梁龙舞」为灵感源，提炼铜梁龙灯的龙角、火焰、鳞甲与梁平木版年画纹样，塑造稻草龙、荷花龙、火龙、竞技龙、水云龙、竹绑龙六位性格各异的Q版祥龙形象，并延展表情包、海报、邮票、信封等系列衍生，让百年龙舞以治愈萌态走进日常，实现非遗文化的年轻化传播与活态传承。</p>
     </div>
